@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; }
+
+body { background-color: #f2f2f2; }
+
+ul, li { list-style: none; }
+
+.todo-box { width: 500px; margin: 10px auto; }
+
+.input-box { width: 100%; height: 40px; border: 1px solid #ddd; }
+.input-box input { width: 100%; height: 40px; padding: 0 10px; font-size: 16px; box-sizing: border-box; outline: none; }
+
+.list-box { background-color: #fff; }
+
+.list-item { height: 40px; line-height: 40px; overflow: hidden; padding: 0 5px; border-bottom: 1px dotted #eee; }
+.list-item:last-child { border-bottom: 0; }
+.list-item a { float: right; color: #999; text-decoration: none; margin-right: 5px; }
+
+.list-txt { float: left; width: 400px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.slide-enter { opacity: 0.01; height: 0; -webkit-transition: all .3s ease-in; transition: all .3s ease-in; }
+
+.slide-enter.slide-enter-active { opacity: 1; height: 40px; }
+
+.slide-leave { opacity: 1; height: 40px; -webkit-transition: all .1s ease-in; transition: all .1s ease-in; }
+
+.slide-leave.slide-leave-active { opacity: 0.01; height: 0; }
