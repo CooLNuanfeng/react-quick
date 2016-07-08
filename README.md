@@ -23,4 +23,8 @@
 
     babel -w --presets react src --out-dir dist
 
-请先确认安装babel，更多关于babel的介绍参考[这里](http://www.ruanyifeng.com/blog/2016/01/babel.html)
+请先确认安装babel 和 babel-preset-react，该命令是对 src中的所有文件进行 preset react 编译并监听，更多关于babel的介绍参考[这里](http://www.ruanyifeng.com/blog/2016/01/babel.html)
+
+#### 说明
+
+babel preset react 只是对 react 的 jsx 语法进行编译，babel 可以对es6 语法进行编译，但都不是模块化，固 js 中require 模块不会起作用，如果要模块化，需要 webpack 工具。webpack+react实例参考[这里](https://github.com/CooLNuanfeng/webpack-react)
